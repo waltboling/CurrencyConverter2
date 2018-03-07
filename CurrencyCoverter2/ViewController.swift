@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  CurrencyCoverter2
 //
-//  Created by Jon Boling on 3/5/18.
+//  Created by Jon Boling on 3/5/18.  
 //  Copyright © 2018 Walt Boling. All rights reserved.
 //
 
