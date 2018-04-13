@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,7 +23,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pound-yen-euro-dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="hHu-da-mML">
-                                <rect key="frame" x="16" y="20" width="343" height="157"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="157"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="bae-m3-WJt"/>
+                                    <constraint firstAttribute="height" constant="157" id="yfb-Q4-XuH"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w86-t4-o7I">
                                 <rect key="frame" x="215.5" y="184" width="139.5" height="30"/>
@@ -103,22 +106,23 @@
                             <constraint firstItem="Mv9-m9-dRY" firstAttribute="baseline" secondItem="y5v-rz-wKh" secondAttribute="baseline" id="61P-pT-em0"/>
                             <constraint firstAttribute="trailing" secondItem="NYi-Lt-yln" secondAttribute="trailing" constant="20" symbolic="YES" id="68o-zh-kK4"/>
                             <constraint firstItem="nvs-2a-AtY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="99g-Ix-ACZ"/>
+                            <constraint firstItem="hHu-da-mML" firstAttribute="top" secondItem="3bW-0j-FVL" secondAttribute="bottom" id="9kL-0I-917"/>
                             <constraint firstItem="w86-t4-o7I" firstAttribute="leading" secondItem="p9V-vM-L6d" secondAttribute="trailing" constant="8" symbolic="YES" id="9yb-9G-UsU"/>
+                            <constraint firstItem="hHu-da-mML" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Awu-Yg-6Sc"/>
                             <constraint firstAttribute="trailing" secondItem="xqj-8b-0sa" secondAttribute="trailing" constant="20" symbolic="YES" id="CcQ-LE-ISs"/>
-                            <constraint firstItem="hHu-da-mML" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ctv-0S-TDf"/>
                             <constraint firstItem="xqj-8b-0sa" firstAttribute="leading" secondItem="WzN-P6-Emy" secondAttribute="trailing" constant="8" symbolic="YES" id="Ez5-aC-X3h"/>
                             <constraint firstItem="nvs-2a-AtY" firstAttribute="top" secondItem="y5v-rz-wKh" secondAttribute="bottom" constant="39" id="Go8-FO-R4N"/>
                             <constraint firstItem="y5v-rz-wKh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="H2K-Xl-b51"/>
                             <constraint firstItem="WzN-P6-Emy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="JME-4y-YcJ"/>
-                            <constraint firstItem="hHu-da-mML" firstAttribute="top" secondItem="3bW-0j-FVL" secondAttribute="bottom" id="Ns0-IZ-5aD"/>
                             <constraint firstItem="p9V-vM-L6d" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="OMl-uC-TrE"/>
                             <constraint firstItem="p9V-vM-L6d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="Oem-KH-x1W"/>
                             <constraint firstItem="LEX-RO-auw" firstAttribute="width" secondItem="p9V-vM-L6d" secondAttribute="width" id="P2F-mn-LbE"/>
                             <constraint firstItem="NYi-Lt-yln" firstAttribute="leading" secondItem="LEX-RO-auw" secondAttribute="trailing" constant="8" symbolic="YES" id="SsC-zh-fAz"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="hHu-da-mML" secondAttribute="trailing" id="as5-BJ-KJX"/>
+                            <constraint firstAttribute="trailing" secondItem="hHu-da-mML" secondAttribute="trailing" id="avZ-Pu-9oB"/>
                             <constraint firstAttribute="trailing" secondItem="w86-t4-o7I" secondAttribute="trailing" constant="20" symbolic="YES" id="dEt-pQ-A5m"/>
                             <constraint firstItem="y5v-rz-wKh" firstAttribute="width" secondItem="p9V-vM-L6d" secondAttribute="width" id="eF8-Nq-cox"/>
                             <constraint firstItem="WzN-P6-Emy" firstAttribute="top" secondItem="LEX-RO-auw" secondAttribute="bottom" constant="8" symbolic="YES" id="gX6-aE-TVE"/>
+                            <constraint firstItem="hHu-da-mML" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gnN-CG-c7V"/>
                             <constraint firstItem="LEX-RO-auw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="hO5-JX-0hj"/>
                             <constraint firstItem="WzN-P6-Emy" firstAttribute="width" secondItem="p9V-vM-L6d" secondAttribute="width" id="hne-YR-HKD"/>
                             <constraint firstItem="NYi-Lt-yln" firstAttribute="baseline" secondItem="LEX-RO-auw" secondAttribute="baseline" id="knQ-93-xK3"/>
